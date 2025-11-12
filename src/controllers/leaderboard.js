@@ -27,7 +27,7 @@ const getLeaderboard = async (req, res) => {
     const _limit = Number.parseInt(limit) || 10;
 
     // fetching user data with pagination and filters
-    const data = await User.findAll({
+    const { count, rows } = await User.findAndCountAll({
       where: {
         ...filters,
       },
@@ -36,11 +36,22 @@ const getLeaderboard = async (req, res) => {
       limit: _limit,
     });
 
-    const users = data.map((row) => row.toJSON());
+    const users = rows
+      .map((row) => row.toJSON())
+      .map((row, i) => ({
+        rank: i + 1,
+        ...row,
+      }));
 
     res.status(200).json({
       success: true,
-      data: users,
+      data: {
+        hits: users,
+        nbHits: count,
+        page: offset,
+        limit: limit,
+        nbPages: Math.floor(users.length / count),
+      },
     });
   } catch (err) {
     res.status(400).json({

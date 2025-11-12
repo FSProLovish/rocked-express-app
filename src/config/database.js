@@ -8,7 +8,7 @@ const sequelize = new Sequelize(
     host: process.env.MYSQL_HOST,
     port: process.env.MYSQL_PORT,
     dialect: "mysql",
-    // logging: process.env.NODE_ENV === "development", // if needed, enable this for db logging
+    logging: false, // if logging required, set value to true
     define: {
       underscore: true,
       freezeTableName: true,
