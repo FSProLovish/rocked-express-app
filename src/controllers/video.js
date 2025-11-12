@@ -50,6 +50,11 @@ const submitVideo = async (req, res) => {
       throw new Error("Email not found!");
     }
 
+    // Calculate start and end of the current day
+    const now = new Date();
+    const startOfTheDay = dateFns.startOfDay(now);
+    const endOfTheDay = dateFns.endOfDay(now);
+
     // get user by email
     // and user watched history for that particular day
     const userData = await User.findOne({
@@ -59,20 +64,21 @@ const submitVideo = async (req, res) => {
       include: [
         {
           model: History,
-          // where: { // TODO: this contains some issue
-          //   [Op.and]: [
-          //     {
-          //       createdAt: {
-          //         [Op.gte]: new Date(),
-          //       },
-          //     },
-          //     {
-          //       createdAt: {
-          //         [Op.lte]: new Date(new Date() - 24 * 60 * 60 * 1000),
-          //       },
-          //     },
-          //   ],
-          // },
+          where: {
+            [Op.and]: [
+              {
+                createdAt: {
+                  [Op.gte]: startOfTheDay,
+                },
+              },
+              {
+                updatedAt: {
+                  [Op.lte]: endOfTheDay,
+                },
+              },
+            ],
+          },
+          required: false,
         },
       ],
     });
@@ -83,8 +89,6 @@ const submitVideo = async (req, res) => {
     if (!user) {
       throw new Error("User not found!");
     }
-
-    console.log(user);
 
     // destructuring `id` from params
     const { id: videoId } = req.params;
@@ -106,7 +110,7 @@ const submitVideo = async (req, res) => {
     let userReward = 20;
 
     const uniqueWatchedVideoIds = Array.from(
-      new Set(user.histories.map((row) => row.fkVideo))
+      new Set((user.histories || []).map((row) => row.fkVideo))
     );
 
     if (uniqueWatchedVideoIds.includes(Number.parseInt(videoId))) {
