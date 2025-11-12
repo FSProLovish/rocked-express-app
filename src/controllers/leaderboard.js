@@ -12,7 +12,7 @@ const getLeaderboard = async (req, res) => {
     // support of various filters
     const filters = {};
     if (name && validator.isAlpha(name)) {
-      filters.name = name;
+      filters.firstName = name;
     }
 
     if (gender) {
