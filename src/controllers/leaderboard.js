@@ -51,7 +51,7 @@ const getLeaderboard = async (req, res) => {
         nbHits: count,
         page: offset,
         limit: _limit,
-        nbPages: Math.floor(count / _limit),
+        nbPages: count / _limit,
       },
     });
   } catch (err) {

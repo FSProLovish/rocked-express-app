@@ -1,6 +1,7 @@
 const { DataTypes, where } = require("sequelize");
 const { sequelize } = require("../config/database");
 const validator = require("validator");
+const History = require("./history");
 
 const User = sequelize.define(
   "user",
@@ -68,6 +69,10 @@ const User = sequelize.define(
     timestamps: true,
   }
 );
+
+User.hasMany(History, {
+  foreignKey: "fkUser",
+});
 
 User.getUserByEmail = async (email) => {
   const user = await User.findOne({

@@ -1,6 +1,9 @@
 const Video = require("../models/video");
 const User = require("../models/user");
 const validator = require("validator");
+const History = require("../models/history");
+const dateFns = require("date-fns");
+const { Op } = require("sequelize");
 
 const getVideoById = async (req, res) => {
   try {
@@ -48,12 +51,40 @@ const submitVideo = async (req, res) => {
     }
 
     // get user by email
-    const user = await User.getUserByEmail(email);
+    // and user watched history for that particular day
+    const userData = await User.findOne({
+      where: {
+        email,
+      },
+      include: [
+        {
+          model: History,
+          // where: { // TODO: this contains some issue
+          //   [Op.and]: [
+          //     {
+          //       createdAt: {
+          //         [Op.gte]: new Date(),
+          //       },
+          //     },
+          //     {
+          //       createdAt: {
+          //         [Op.lte]: new Date(new Date() - 24 * 60 * 60 * 1000),
+          //       },
+          //     },
+          //   ],
+          // },
+        },
+      ],
+    });
+
+    const user = userData ? userData.toJSON() : null;
 
     // throw error, if user not exists
     if (!user) {
       throw new Error("User not found!");
     }
+
+    console.log(user);
 
     // destructuring `id` from params
     const { id: videoId } = req.params;
@@ -71,17 +102,43 @@ const submitVideo = async (req, res) => {
       throw new Error(`Video not found by id = [${videoId}]`);
     }
 
+    // calculating user reward for a particular day
+    let userReward = 20;
+
+    const uniqueWatchedVideoIds = Array.from(
+      new Set(user.histories.map((row) => row.fkVideo))
+    );
+
+    if (uniqueWatchedVideoIds.includes(Number.parseInt(videoId))) {
+      userReward = 0;
+    } else {
+      if (
+        uniqueWatchedVideoIds.length >= 2 &&
+        uniqueWatchedVideoIds.length < 5
+      ) {
+        userReward = 5;
+      } else if (uniqueWatchedVideoIds.length >= 5) {
+        userReward = 0;
+      }
+    }
+
+    // create user video watched history
+    await History.create({
+      fkUser: user.id,
+      fkVideo: videoId,
+    });
+
     // update user stars
     await User.updateUserById(
       {
-        stars: user.stars + 20,
+        stars: user.stars + userReward,
       },
       user.id
     );
 
     res.status(200).json({
       success: true,
-      message: "User is awarded with 20 stars.",
+      message: "User is awarded with stars. " + userReward,
     });
   } catch (err) {
     res.status(400).json({
