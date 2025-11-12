@@ -17,7 +17,7 @@ const startApp = async () => {
   // ({ force: true }) - This creates the table, dropping it first if it already existed
   // ({ alter: true }) - This checks what is the current state of the table in the database
 
-  await sequelize.sync({ alter: process.env.NODE_ENV === "development" });
+  // await sequelize.sync({ alter: process.env.NODE_ENV === "development" });
 
   app.listen(PORT, (err) => {
     if (!err) {

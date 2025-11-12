@@ -1,9 +1,14 @@
 const validator = require("validator");
 
 const validateLeaderboardFilters = (req) => {
-  const { page, limit, name, gender, department } = req.query;
+  const { page = 0, limit = 10, name, gender, department } = req.query || {};
 
-  if (!validator.isNumeric(page) || !validator.isNumeric(limit)) {
+  if (
+    page < 0 ||
+    limit < 0 ||
+    !validator.isNumeric(page.toString()) ||
+    !validator.isNumeric(limit.toString())
+  ) {
     throw new Error(
       `Invalid page value = [${page}] and limit value = [${limit}]`
     );

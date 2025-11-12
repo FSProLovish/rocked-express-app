@@ -32,7 +32,8 @@ const getLeaderboard = async (req, res) => {
         ...filters,
       },
       order: [["stars", "DESC"]],
-      offset,
+      attributes: ["email", "firstName", "lastName", "stars"],
+      offset: offset * _limit,
       limit: _limit,
     });
 
@@ -49,8 +50,8 @@ const getLeaderboard = async (req, res) => {
         hits: users,
         nbHits: count,
         page: offset,
-        limit: limit,
-        nbPages: Math.floor(users.length / count),
+        limit: _limit,
+        nbPages: Math.floor(count / _limit),
       },
     });
   } catch (err) {
