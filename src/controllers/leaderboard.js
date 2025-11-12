@@ -40,7 +40,7 @@ const getLeaderboard = async (req, res) => {
     const users = rows
       .map((row) => row.toJSON())
       .map((row, i) => ({
-        rank: i + 1,
+        rank: page * _limit + i + 1,
         ...row,
       }));
 
