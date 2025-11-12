@@ -1,0 +1,620 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": { "title": "Miss", "first": "Eloane", "last": "Nguyen" },
+      "enabled": true,
+      "email": "eloane.nguyen@example.com",
+      
+      "department": "SALES"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Isandro", "last": "Santos" },
+      "enabled": true,
+      "email": "isandro.santos@example.com",
+      
+      "department": "SALES"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Ms", "first": "Marzena", "last": "Thiede" },
+      "enabled": true,
+      "email": "marzena.thiede@example.com",
+      
+      "department": "SALES"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Malcolm", "last": "Schoop" },
+      "enabled": true,
+      "email": "malcolm.schoop@example.com",
+      
+      "department": "SALES"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Efe", "last": "Ilıcalı" },
+      "enabled": true,
+      "email": "efe.ilicali@example.com",
+      
+      "department": "SALES"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Miss", "first": "Bérénice", "last": "Petit" },
+      "enabled": true,
+      "email": "berenice.petit@example.com",
+      
+      "department": "SALES"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "James", "last": "Green" },
+      "enabled": false,
+      "email": "james.green@example.com",
+      
+      "department": "SALES"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Mrs", "first": "Juana", "last": "Barela" },
+      "enabled": false,
+      "email": "juana.barela@example.com",
+      
+      "department": "SALES"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Justin", "last": "Hall" },
+      "enabled": false,
+      "email": "justin.hall@example.com",
+      
+      "department": "SALES"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Andre", "last": "Parker" },
+      "enabled": false,
+      "email": "andre.parker@example.com",
+      
+      "department": "SALES"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Jonathan", "last": "Johansen" },
+      "enabled": false,
+      "email": "jonathan.johansen@example.com",
+      
+      "department": "SALES"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Lewis", "last": "Burton" },
+      "enabled": false,
+      "email": "lewis.burton@example.com",
+      
+      "department": "SALES"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Ms", "first": "Alice", "last": "Chu" },
+      "enabled": false,
+      "email": "alice.chu@example.com",
+      
+      "department": "SALES"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Miss", "first": "Şefika", "last": "Van Deuveren" },
+      "enabled": true,
+      "email": "sefika.vandeuveren@example.com",
+      
+      "department": "SALES"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Miss", "first": "Vishishta", "last": "Holla" },
+      "enabled": true,
+      "email": "vishishta.holla@example.com",
+      
+      "department": "SALES"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Rahul", "last": "Pai" },
+      "enabled": true,
+      "email": "rahul.pai@example.com",
+      
+      "department": "HR"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Miss", "first": "Florence", "last": "Thompson" },
+      "enabled": true,
+      "email": "florence.thompson@example.com",
+      
+      "department": "HR"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Ms", "first": "Xynthia", "last": "Jankie" },
+      "enabled": true,
+      "email": "xynthia.jankie@example.com",
+      
+      "department": "HR"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Miss", "first": "Úrsula", "last": "Laureano" },
+      "enabled": true,
+      "email": "ursula.laureano@example.com",
+      
+      "department": "HR"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Rishi", "last": "Sheikh" },
+      "enabled": true,
+      "email": "rishi.sheikh@example.com",
+      
+      "department": "HR"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Ottomar", "last": "Senf" },
+      "enabled": true,
+      "email": "ottomar.senf@example.com",
+      
+      "department": "HR"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Mendo", "last": "Vieira" },
+      "enabled": true,
+      "email": "mendo.vieira@example.com",
+      
+      "department": "HR"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Ms", "first": "Aubree", "last": "Abraham" },
+      "enabled": true,
+      "email": "aubree.abraham@example.com",
+      
+      "department": "HR"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Ms", "first": "Marianne", "last": "Osnes" },
+      "enabled": true,
+      "email": "marianne.osnes@example.com",
+      
+      "department": "HR"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Mrs", "first": "Rosario", "last": "Soler" },
+      "enabled": true,
+      "email": "rosario.soler@example.com",
+      
+      "department": "HR"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Mrs", "first": "Madison", "last": "Turner" },
+      "enabled": true,
+      "email": "madison.turner@example.com",
+      
+      "department": "HR"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Çetin", "last": "Samancı" },
+      "enabled": true,
+      "email": "cetin.samanci@example.com",
+      
+      "department": "HR"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Miss", "first": "Carla", "last": "Navarro" },
+      "enabled": true,
+      "email": "carla.navarro@example.com",
+      
+      "department": "HR"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Ms", "first": "Sanne", "last": "Gjerde" },
+      "enabled": true,
+      "email": "sanne.gjerde@example.com",
+      
+      "department": "HR"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Hudson", "last": "Johnson" },
+      "enabled": true,
+      "email": "hudson.johnson@example.com",
+      
+      "department": "HR"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Frederik", "last": "Pedersen" },
+      "enabled": true,
+      "email": "frederik.pedersen@example.com",
+      
+      "department": "HR"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Mrs", "first": "Lea", "last": "White" },
+      "enabled": true,
+      "email": "lea.white@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Said", "last": "Guldberg" },
+      "enabled": true,
+      "email": "said.guldberg@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Mrs", "first": "Leokadia", "last": "Klenk" },
+      "enabled": true,
+      "email": "leokadia.klenk@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Mechislav", "last": "Bobko" },
+      "enabled": true,
+      "email": "mechislav.bobko@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Tracy", "last": "Knight" },
+      "enabled": true,
+      "email": "tracy.knight@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Rómulo", "last": "Peixoto" },
+      "enabled": true,
+      "email": "romulo.peixoto@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Mrs", "first": "Ute", "last": "Spindler" },
+      "enabled": true,
+      "email": "ute.spindler@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Viktor", "last": "Sulyatickiy" },
+      "enabled": true,
+      "email": "viktor.sulyatickiy@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Jose", "last": "Bishop" },
+      "enabled": true,
+      "email": "jose.bishop@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Tony", "last": "Hegg" },
+      "enabled": true,
+      "email": "tony.hegg@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Mrs", "first": "Özsu", "last": "Özbir" },
+      "enabled": true,
+      "email": "ozsu.ozbir@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Ms", "first": "Gilciane", "last": "Rocha" },
+      "enabled": true,
+      "email": "gilciane.rocha@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Barry", "last": "Jenkins" },
+      "enabled": true,
+      "email": "barry.jenkins@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Ms", "first": "Julia", "last": "Haapala" },
+      "enabled": true,
+      "email": "julia.haapala@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Ahmet", "last": "Hakyemez" },
+      "enabled": true,
+      "email": "ahmet.hakyemez@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Mrs", "first": "Debbie", "last": "Hanson" },
+      "enabled": true,
+      "email": "debbie.hanson@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Mrs", "first": "Oya", "last": "Çevik" },
+      "enabled": true,
+      "email": "oya.cevik@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Miss", "first": "Lyubomira", "last": "Kachura" },
+      "enabled": true,
+      "email": "lyubomira.kachura@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Miss", "first": "Meral", "last": "Arıcan" },
+      "enabled": true,
+      "email": "meral.arican@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Jonás", "last": "Armas" },
+      "enabled": true,
+      "email": "jonas.armas@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Mrs", "first": "Madhumita", "last": "Naik" },
+      "enabled": true,
+      "email": "madhumita.naik@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Vinjar", "last": "Amini" },
+      "enabled": true,
+      "email": "vinjar.amini@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Mrs", "first": "Sheryl", "last": "Horton" },
+      "enabled": true,
+      "email": "sheryl.horton@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Ms", "first": "Mabel", "last": "Lawson" },
+      "enabled": true,
+      "email": "mabel.lawson@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Mademoiselle", "first": "Theresia", "last": "Meyer" },
+      "enabled": true,
+      "email": "theresia.meyer@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Tony", "last": "Everaers" },
+      "enabled": true,
+      "email": "tony.everaers@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Mrs", "first": "Olivia", "last": "Oja" },
+      "enabled": true,
+      "email": "olivia.oja@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Monsieur", "first": "Ludwig", "last": "Menard" },
+      "enabled": true,
+      "email": "ludwig.menard@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Carl", "last": "Little" },
+      "enabled": true,
+      "email": "carl.little@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Ms", "first": "Ashley", "last": "Stephens" },
+      "enabled": true,
+      "email": "ashley.stephens@example.com",
+      
+      "department": "MARKETING"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Ms", "first": "Apoorva", "last": "Nand" },
+      "enabled": true,
+      "email": "apoorva.nand@example.com",
+      
+      "department": "SERVICES"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Miss", "first": "Milena", "last": "Jovanović" },
+      "enabled": true,
+      "email": "milena.jovanovic@example.com",
+      
+      "department": "SERVICES"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Ms", "first": "Molly", "last": "Hughes" },
+      "enabled": true,
+      "email": "molly.hughes@example.com",
+      
+      "department": "SERVICES"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Chad", "last": "Hunt" },
+      "enabled": true,
+      "email": "chad.hunt@example.com",
+      
+      "department": "SERVICES"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Mstibog", "last": "Trocenko" },
+      "enabled": true,
+      "email": "mstibog.trocenko@example.com",
+      
+      "department": "SERVICES"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Olímpio", "last": "Nascimento" },
+      "enabled": true,
+      "email": "olimpio.nascimento@example.com",
+      
+      "department": "SERVICES"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Alessio", "last": "Moreau" },
+      "enabled": true,
+      "email": "alessio.moreau@example.com",
+      
+      "department": "SERVICES"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Mrs", "first": "Sophie", "last": "Kumar" },
+      "enabled": true,
+      "email": "sophie.kumar@example.com",
+      
+      "department": "SERVICES"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Monsieur", "first": "Robert", "last": "Durand" },
+      "enabled": true,
+      "email": "robert.durand@example.com",
+      
+      "department": "SERVICES"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Keith", "last": "May" },
+      "enabled": true,
+      "email": "keith.may@example.com",
+      
+      "department": "SERVICES"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Joaquín", "last": "Vásquez" },
+      "enabled": true,
+      "email": "joaquin.vasquez@example.com",
+      
+      "department": "SERVICES"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Ricky", "last": "Meyer" },
+      "enabled": true,
+      "email": "ricky.meyer@example.com",
+      
+      "department": "SERVICES"
+    },
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "José", "last": "Arias" },
+      "enabled": true,
+      "email": "jose.arias@example.com",
+      
+      "department": "SERVICES"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Mrs", "first": "Ellen", "last": "Manni" },
+      "enabled": true,
+      "email": "ellen.manni@example.com",
+      
+      "department": "SERVICES"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Mademoiselle", "first": "Elena", "last": "Olivier" },
+      "enabled": true,
+      "email": "elena.olivier@example.com",
+      
+      "department": "SERVICES"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Miss", "first": "Erika", "last": "Scott" },
+      "enabled": true,
+      "email": "erika.scott@example.com",
+      
+      "department": "SERVICES"
+    }
+  ]
+}
